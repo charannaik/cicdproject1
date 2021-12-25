@@ -1,7 +1,7 @@
 pipeline {
-    agent none
-    tools {
-        maven 'mymaven'
+	agent { label 'master' }
+    	tools {
+		maven 'mymaven'
     }
     stages {
         stage('Clone') {
